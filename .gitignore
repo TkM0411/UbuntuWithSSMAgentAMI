@@ -14,4 +14,4 @@ crash.log
 
 # For built boxes
 *.box
-manifest.json
+manifest.*

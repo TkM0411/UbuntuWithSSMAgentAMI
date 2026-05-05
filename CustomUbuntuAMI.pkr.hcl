@@ -50,6 +50,7 @@ data "amazon-ami" "ubuntu" {
     root-device-type    = "ebs"
     virtualization-type = "hvm"
   }
+  region      = var.aws_region
   most_recent = true
   owners      = ["099720109477"] # Canonical
 }
