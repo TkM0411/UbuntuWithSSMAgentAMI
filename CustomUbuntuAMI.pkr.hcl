@@ -46,7 +46,7 @@ variable "architecture" {
 
 data "amazon-ami" "ubuntu" {
   filters = {
-    name                = "ubuntu/images/*/ubuntu-*-*-${var.architecture}-server-*"
+    name                = "ubuntu/images/hvm-ssd-gp3/ubuntu-*-*-${var.architecture}-server-*"
     root-device-type    = "ebs"
     virtualization-type = "hvm"
   }
